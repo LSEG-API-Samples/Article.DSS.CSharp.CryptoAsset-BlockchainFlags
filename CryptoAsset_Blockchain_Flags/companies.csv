@@ -1,0 +1,10 @@
+#Identifier Type, Identifier Code
+#Identifier Type: (CHR (ChainRIC), CSP (Cusip), ISN (Isin), RIC (Ric), SED (Sedol), IPC (FileCode))
+RIC,0863.HK
+RIC,FDIG.O
+RIC,3171.HK
+RIC,BITS.O
+RIC,BTCR.K
+IPC,1
+IPC,81
+IPC,1272
