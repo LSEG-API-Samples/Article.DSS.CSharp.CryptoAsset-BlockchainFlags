@@ -438,6 +438,15 @@ namespace DSS_CryptoAsset_Blockchain_Flags
         }
         public void Run()
         {
+            GetCredential();
+
+            DssClient dssClient = new DssClient();
+
+            dssClient.ConnectToServer(dssUserName.Value, dssPassword.Value);
+
+
+            Console.WriteLine("\nReturned session token: {0}\n",dssClient.SessionToken);
+
            
 
             if (!FileExists(inputFileName.Value)) { 
@@ -460,16 +469,7 @@ namespace DSS_CryptoAsset_Blockchain_Flags
                 Console.WriteLine("Exit program due to no identifiers in the list.");
                 return;  //Exit main program
             }
-            Console.WriteLine("");
-            GetCredential();
-
-            DssClient dssClient = new DssClient();
-
-            dssClient.ConnectToServer(dssUserName.Value, dssPassword.Value);
-
-
-            Console.WriteLine("\nReturned session token: {0}\n",dssClient.SessionToken);
-
+            Console.WriteLine("");          
           
            
 
