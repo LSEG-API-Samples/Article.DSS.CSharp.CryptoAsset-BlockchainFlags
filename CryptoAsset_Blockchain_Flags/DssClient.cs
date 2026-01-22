@@ -13,7 +13,7 @@ namespace DSS_CryptoAsset_Blockchain_Flags
     {
         private ExtractionsContext extractionsContext;
 
-        private Uri dssUri = new Uri("https://selectapi.datascope.refinitiv.com/RestApi/v1/");
+        private Uri dssUri = new Uri("https://selectapi.datascope.lseg.com/RestApi/v1/");
 
         public void ConnectToServer(string dssUserName, string dssUserPassword)
         {
@@ -74,3 +74,4 @@ namespace DSS_CryptoAsset_Blockchain_Flags
 
     }
 }
+
